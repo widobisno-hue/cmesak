@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMESAK – Centro Médico Ervanário</title>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f7f9f8; color: #123; }
+    header { background: linear-gradient(90deg, #0f7b6c, #4caf50); padding: 20px; text-align: center; }
+    header img { height: 90px; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #0f7b6c; margin-bottom: 15px; }
+    .hero img { width: 100%; border-radius: 12px; }
+    ul { list-style: none; padding: 0; }
+    ul li { background: #fff; margin-bottom: 10px; padding: 15px; border-radius: 10px; }
+    .locations, .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .contact { background: #0f7b6c; color: #fff; text-align: center; }
+    footer { background: #0c5f54; color: #fff; text-align: center; padding: 15px; font-size: 14px; }
+      .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp {
+        width: 50px;
+        height: 50px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header img { height: 70px; }
+      section { padding: 30px 15px; }
+      h2 { font-size: 22px; }
+    }
+      .section-title {
+      text-transform: uppercase;
+      color: #ffffff; /* branco sobre o verde */
+      font-weight: bold;
+    }
+    .box-title {
+      background: #4caf50; /* verde da identidade visual */
+      padding: 15px 22px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .contact p {
+      color: #fff;
+      font-size: 18px;
+    }
+    .phone {
+      color: #ffffff; /* ícone telefone branco */
+      font-weight: bold;
+    }
+    .contact p span { color: #fff; }
+    .contact .phone { color: #fff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-cmesak.png" alt="CMESAK" />
+</header>
+
+<section class="hero">
+  <img src="capa-cmesak.png" alt="Centro Médico Ervanário Solução Agostinho Kapitia" />
+</section>
+
+<section>
+  <h2 class="section-title box-title">SERVIÇOS</h2>
+  <ul>
+    <li>Consultas</li>
+    <li>Tratamentos Naturais</li>
+    <li>Check-up Full</li>
+    <li>Medicamentos Ervanários</li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="section-title box-title">CONSULTÓRIOS EM ANGOLA</h2>
+  <p><strong>SEDE EM LUANDA</strong></p>
+  <div class="locations">
+    <div>Luanda</div>
+    <div>Cuanza Sul</div>
+    <div>Benguela</div>
+    <div>Bié</div>
+    <div>Huambo</div>
+    <div>Cunene</div>
+    <div>Namibe</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title box-title">LOCALIZAÇÃO</h2>
+  <p>Encontre-nos no mapa:</p>
+  <iframe
+    src="https://www.google.com/maps?q=-8.904237186009222,13.30400648445517&hl=pt&z=16&output=embed"
+    width="100%"
+    height="350"
+    style="border:0; border-radius:12px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+<section>
+  <h2 class="section-title box-title">GALERIA DE PLANTAS</h2>
+  <div class="gallery">
+    <img src="planta1.jpg" alt="Planta medicinal" />
+    <img src="planta2.jpg" alt="Planta medicinal" />
+    <img src="planta3.jpg" alt="Planta medicinal" />
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contactos</h2>
+  <p><span class="phone">📞</span> (+244) 926 021 952</p>
+  <p><span class="phone">📞</span> (+244) 923 900 879</p>
+  <p>Centro Médico Ervanário Solução Agostinho Kapitia</p>
+</section>
+
+<footer>
+  Criado por KWANZARTS – 2026
+</footer>
+
+<a class="whatsapp" href="https://wa.me/244923900879" target="_blank" aria-label="WhatsApp">💬</a>
+
+</body>
+</html>
